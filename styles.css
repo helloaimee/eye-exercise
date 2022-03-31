@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFB6C1;
+}
+
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye {
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: move 5s ease-out infinite;
+  background: radial-gradient(circle at 50% 50%, #547237 0%, #53b394 90%);
+}
+
+.ball:before {
+  content: "";
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: black;
+  transform: translate(-50%, -50%);
+}
+  .ball:after {
+    content: "";
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  #lid {
+    animation: blink 2.4s infinite;
+    animation-delay: 5s;
+    top: -50px;
+    border-top: 10px outset #a05964;
+    border-bottom: 2px inset #a05964;
+  }
+  
+  @keyframes blink {
+  
+    90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(15px) scaleY(0)
+    }
+    100% {
+      animation-timing-function: ease-out;
+    }
+  }
