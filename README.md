@@ -6,7 +6,7 @@ A pair of blinking eyes styled with CSS, using a simple JavaScript event to foll
 
 ## :question: How to run
 
-A live version can be viewed at https://helloaimee.github.io/eye-movement.
+A live version can be viewed at https://helloaimee.github.io/eye-exercise.
 
 This project has no special dependencies. Save each file to a folder on your local machine for customization.
 
